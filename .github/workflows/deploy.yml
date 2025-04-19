@@ -11,12 +11,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: git config
         run: | 
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
       - name: Auto
         run: |
-        git add index.html
-        git commit -m "CI/CD"
-        git push
+          git add index.html
+          git commit -m "CI/CD"
+          git push
      
 
