@@ -15,10 +15,11 @@ jobs:
           git config --global user.email "actions@github.com"
       - name: Auto
         run: |
-          echo "Last update: $(date) >> index.html
+          echo "Last update: $(date)" >> index.html
           git add index.html
           git commit -m "CI/CD"
           git push
 
      
+
 
