@@ -6,19 +6,19 @@ on:
 
 jobs:
   deploy:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v4
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
 
-        - run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+      - run: | 
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
 
 
-        - run: |
-          git add index.html
-          git commit -m "CI/CD"
-          git push
+      - run: |
+        git add index.html
+        git commit -m "CI/CD"
+        git push
 
 
